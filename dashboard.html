@@ -522,9 +522,70 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <div>
+                                        <a aria-controls="collapseExample" aria-expanded="true" class="btn ripple btn-outline-primary" data-toggle="collapse" href="#collapseExample" role="button">
+                                            Account Design</a>
+                                        <div class="mg-t-5 collapse" id="collapseExample" style="">
+                                            <div class="card-body">
+                                               
+
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 control-label " for="input-logo">Store Logo</label>
+                                                    <div class="col-sm-10">
+                                                        <a href="" id="thumb-logo" data-toggle="image" class="img-thumbnail" data-original-title="" title="" aria-describedby="popover944785">
+                                                            <img src="" alt="" title="" data-placeholder="">
+                                                        </a>
+
+                                                        <input type="file" name="config_logo" value="" id="input-logo">
+                                                        <img src="https://login.orderitup.app/ordering/va/newshop47/upload/image/catalog/newshop47-logo.png" alt="Logo" height="42" width="42">
+                                                        <!--<input type="hidden" name="config_logo" value="" id="input-logo" />	--->
+                                                        <input type="hidden" name="config_logo_name" value="newshop47-logo.png" id="config_logo_name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 control-label " for="inputTheme">Theme</label>
+                                                    <div class="col-sm-10">
+                                                        <select name="" id="inputTheme" class="form-control" onchange="displayDivDemo('hideValuesOnSelect', this)">
+                                                            <option>
+                                                                Select</option>
+                                                            <option value="0">
+                                                                Original
+                                                            </option>
+                                                            <option value="1">
+                                                                2021
+                                                            </option>
+                                                        </select>
+                                                        <div id="hideValuesOnSelect"> hide me on select original </div>
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row" id="bann_color">
+
+                                                    <label class="col-sm-2 control-label " for="input-report-required">Banner Color</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="banner_color" value="#bc351b" placeholder="banner color..." class="form-control">
+                                                        <span id="bannercolorError" style="color:red;"></span>
+                                                    </div>
+                                                </div>
+
+                                             
+
+                                                <!-- Store Logo ends -->
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 control-label " for="input-report-required">Shop Color</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="shop_color" value="#bc351b" placeholder="shop color..." class="form-control">
+                                                        <span id="shopcolorError" style="color:red;"></span>
+                                                    </div>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
                     <!--  Accounts Settings ends-->
                     <!--  Live Shop Starts-->
@@ -557,7 +618,7 @@
 
                                         <div
                                             id="collapseOne"
-                                            class="collapse show"
+                                            class="collapse"
                                             aria-labelledby="headingOne"
                                             data-parent="#accordionExample">
                                             <div class="card-body">
@@ -566,7 +627,7 @@
                                                 <h4 class="card-title"></h4>
                                             </div> -->
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer">Computers:</label>
+                                                        <label for="selectComputer">Printnode:</label>
                                                         <select id="selectComputer" class="form-control">
                                                             <option>
                                                                 Select Computer</option>
@@ -584,13 +645,13 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress">Mac Address:</label>
+                                                        <label for="macAddress">Star CloudPRNT</label>
                                                         <div class="d-flex justify-content-between"><input
                                                             type="text"
                                                             id="macAddress"
                                                             class="form-control col mr-md-3"
                                                             placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -622,7 +683,7 @@
                                                 <h4 class="card-title">Lofty Pursuits</h4>
                                             </div> -->
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer1">Computers:</label>
+                                                        <label for="selectComputer1">Printnode:</label>
                                                         <select id="selectComputer1" class="form-control">
                                                             <option>
                                                                 Select Computer</option>
@@ -639,14 +700,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress1">Mac Address:</label>
+                                                        <label for="macAddress1">Star CloudPRNT</label>
                                                         <div class="d-flex justify-content-between">
                                                             <input
                                                                 type="text"
                                                                 id="macAddress1"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -678,7 +739,7 @@
                                                 <h4 class="card-title">Lofty Pursuits (Zone 1)</h4>
                                             </div> -->
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer2">Computers:</label>
+                                                        <label for="selectComputer2">Printnode:</label>
                                                         <select id="selectComputer2" class="form-control">
                                                             <option>
                                                                 Select Computer</option>
@@ -695,14 +756,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress3">Mac Address:</label>
+                                                        <label for="macAddress3">Star CloudPRNT</label>
                                                         <div class="d-flex justify-content-between">
                                                             <input
                                                                 type="text"
                                                                 id="macAddress3"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -734,7 +795,7 @@
                                                 <h4 class="card-title">Lofty Pursuits Lake Jackson Area</h4>
                                             </div> -->
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer4">Computers:</label>
+                                                        <label for="selectComputer4">Printnode:</label>
                                                         <select id="selectComputer4" class="form-control">
                                                             <option>
                                                                 Select Computer</option>
@@ -751,14 +812,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress4">Mac Address:</label>
+                                                        <label for="macAddress4">Star CloudPRNT</label>
                                                         <div class="d-flex justify-content-between">
                                                             <input
                                                                 type="text"
                                                                 id="macAddress4"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success  px-md-5">Check Printer</button>
+                                                            <button class="btn btn-success  px-md-5">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -788,7 +849,7 @@
                                                 <div class="row pt-4 border-bottom">
 
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer5">Computers:</label>
+                                                        <label for="selectComputer5">Printnode:</label>
                                                         <select id="selectComputer5" class="form-control">
                                                             <option>
                                                                 Select Computer</option>
@@ -805,14 +866,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress5">Mac Address:</label>
+                                                        <label for="macAddress5">Star CloudPRNT</label>
                                                         <div class="d-flex justify-content-between">
                                                             <input
                                                                 type="text"
                                                                 id="macAddress5"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -845,7 +906,7 @@
                                             </div> -->
 
                                                     <div class="col-md-6 mb-4">
-                                                        <label for="macAddress5">Mac Address:</label>
+                                                        <label for="macAddress5">Star CloudPRNT</label>
 
                                                         <div class="d-flex justify-content-between">
                                                             <input
@@ -853,7 +914,7 @@
                                                                 id="macAddress5"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1047,6 +1108,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">PRINTNODE SETTINGS</h5>
+
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -1056,27 +1118,43 @@
                             <div class="row">
                                 <div class="col">
                                     <label for="eMail">Email</label>
-                                    <input type="text" class="form-control" id="eMail" placeholder="Child print node email">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="eMail"
+                                        placeholder="Child print node email">
                                 </div>
                                 <div class="col">
                                     <label for="password">Password</label>
-                                    <input type="password" id="password" class="form-control" placeholder="Child print node Password">
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        class="form-control"
+                                        placeholder="Child print node Password">
                                 </div>
 
                             </div>
                             <div class="row mt-5">
-                                <div class="col bg-light py-3 m-3"> 
-                                    <p> <strong>ID:</strong> 47784</p> 
-                                <p><strong>Email:</strong>testMyApp@email.com</p>
-                                <p><strong>Password:</strong>1234567890</p>
-                                <p><strong>Production Key:</strong> a5955bfe5bff8b9d03af7b9d4ca60a752de588f1e603d55a05f80835116b82d6</p>
+                                <div class="col bg-light py-3 m-3">
+                                    <p>
+                                        <strong>ID:</strong>
+                                        47784</p>
+                                    <p>
+                                        <strong>Email:</strong>testMyApp@email.com</p>
+                                    <p>
+                                        <strong>Password:</strong>1234567890</p>
+                                    <p>
+                                        <strong>Production Key:</strong>
+                                        a5955bfe5bff8b9d03af7b9d4ca60a752de588f1e603d55a05f80835116b82d6</p>
                                 </div>
                             </div>
                         </form>
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Delete Account</button>
+                        <button class="btn btn-success mr-md-2">Save</button>
+                        <button class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete Account</button>
 
                     </div>
                 </div>
