@@ -428,14 +428,14 @@
                                                 <label for="adminPw">Admin PW :</label>
                                                 <input type="text" id="adminPw" class="form-control" placeholder="newshop47">
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="storeType">Store Type:</label>
                                                 <select id="storeType" class="form-control">
                                                     <option>Normal</option>
                                                     <option>Pickup</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="storeTemplate">Store Template:</label>
                                                 <select id="storeTemplate" class="form-control">
                                                     <option>Please Select
@@ -443,7 +443,7 @@
                                                     <option>Normal</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="cim">CIM:</label>
                                                 <select id="cim" class="form-control">
                                                     <option>With CIM
@@ -451,7 +451,7 @@
                                                     <option>Without CIM</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="printer">Printer:</label>
                                                 <select id="printer" class="form-control">
                                                     <option>Yes
@@ -468,7 +468,7 @@
                                                     <option>Both</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="deliveryOptions">Delivery Options:</label>
                                                 <select id="deliveryOptions" class="form-control">
                                                     <option>Pickup only
@@ -492,7 +492,7 @@
                                                     <option>Disabled</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="printEmailNotification">Print Email Notification:</label>
                                                 <select id="printEmailNotification" class="form-control">
                                                     <option>Enabled
@@ -500,7 +500,7 @@
                                                     <option>Disabled</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="emailAddress1">Email Address:</label>
                                                 <input
                                                     type="text"
@@ -508,7 +508,7 @@
                                                     class="form-control"
                                                     placeholder="test@email.com">
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="smsNotification">SMS Notification:</label>
                                                 <select id="smsNotification" class="form-control">
                                                     <option>Enabled
@@ -516,7 +516,7 @@
                                                     <option>Disabled</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 mb-4">
+                                            <div class="col-md-6 mb-4 d-none">
                                                 <label for="smsNumber">SMS Number:</label>
                                                 <input type="text" class="form-control" id="smsNumber">
                                             </div>
@@ -527,6 +527,351 @@
                         </div>
                     </div>
                     <!--  Accounts Settings ends-->
+                    <!--  Live Shop Starts-->
+                    <div class="row row-sm">
+                        <div class="col-12">
+                            <div class="card p-3">
+                                <div class="row mb-4">
+                                    <div class="col-md-6"> <h4 class="card-title mb-4">Printer Setting</h4>  </div>
+                                    <div class="col-md-6 text-md-right"> <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Print Node Account</button> </div>
+                                </div>
+                                <div class="accordion " id="accordionExample">
+                                    <div class="card ">
+                                        <div class="card-header py-2" id="headingOne">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseOne"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Test
+                                                </button>
+                                            </h2>
+                                        </div>
+
+                                        <div
+                                            id="collapseOne"
+                                            class="collapse show"
+                                            aria-labelledby="headingOne"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4 border-bottom">
+                                                    <!-- <div class="col-md-12">
+                                                <h4 class="card-title"></h4>
+                                            </div> -->
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="selectComputer">Computers:</label>
+                                                        <select id="selectComputer" class="form-control">
+                                                            <option>
+                                                                Select Computer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="printer">Printers:</label>
+                                                        <div class="d-flex">
+                                                            <select id="printer" class="form-control mr-2">
+                                                                <option>
+                                                                    No Printer</option>
+                                                            </select>
+                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress">Mac Address:</label>
+                                                        <div class="d-flex justify-content-between"><input
+                                                            type="text"
+                                                            id="macAddress"
+                                                            class="form-control col mr-md-3"
+                                                            placeholder="Mac Address">
+                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header py-2" id="headingTwo">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseTwo"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Lofty Pursuits
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div
+                                            id="collapseTwo"
+                                            class="collapse"
+                                            aria-labelledby="headingTwo"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4">
+                                                    <!-- <div class="col-md-12">
+                                                <h4 class="card-title">Lofty Pursuits</h4>
+                                            </div> -->
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="selectComputer1">Computers:</label>
+                                                        <select id="selectComputer1" class="form-control">
+                                                            <option>
+                                                                Select Computer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="printer1">Printers:</label>
+                                                        <div class="d-flex">
+                                                            <select id="printer1" class="form-control mr-2">
+                                                                <option>
+                                                                    No Printer</option>
+                                                            </select>
+                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress1">Mac Address:</label>
+                                                        <div class="d-flex justify-content-between">
+                                                            <input
+                                                                type="text"
+                                                                id="macAddress1"
+                                                                class="form-control col mr-md-3"
+                                                                placeholder="Mac Address">
+                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header py-2" id="headingThree">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseThree"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Lofty Pursuits (Zone 1)
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div
+                                            id="collapseThree"
+                                            class="collapse"
+                                            aria-labelledby="headingThree"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4 border-bottom">
+                                                    <!-- <div class="col-md-12">
+                                                <h4 class="card-title">Lofty Pursuits (Zone 1)</h4>
+                                            </div> -->
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="selectComputer2">Computers:</label>
+                                                        <select id="selectComputer2" class="form-control">
+                                                            <option>
+                                                                Select Computer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="printer2">Printers:</label>
+                                                        <div class="d-flex">
+                                                            <select id="printer2" class="form-control mr-2">
+                                                                <option>
+                                                                    No Printer</option>
+                                                            </select>
+                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress3">Mac Address:</label>
+                                                        <div class="d-flex justify-content-between">
+                                                            <input
+                                                                type="text"
+                                                                id="macAddress3"
+                                                                class="form-control col mr-md-3"
+                                                                placeholder="Mac Address">
+                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header py-2" id="headingFour">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseFour"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Lofty Pursuits Lake Jackson Area
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div
+                                            id="collapseFour"
+                                            class="collapse"
+                                            aria-labelledby="headingFour"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4 border-bottom">
+                                                    <!-- <div class="col-md-12">
+                                                <h4 class="card-title">Lofty Pursuits Lake Jackson Area</h4>
+                                            </div> -->
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="selectComputer4">Computers:</label>
+                                                        <select id="selectComputer4" class="form-control">
+                                                            <option>
+                                                                Select Computer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="printer4">Printers:</label>
+                                                        <div class="d-flex">
+                                                            <select id="printer4" class="form-control mr-2">
+                                                                <option>
+                                                                    No Printer</option>
+                                                            </select>
+                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress4">Mac Address:</label>
+                                                        <div class="d-flex justify-content-between">
+                                                            <input
+                                                                type="text"
+                                                                id="macAddress4"
+                                                                class="form-control col mr-md-3"
+                                                                placeholder="Mac Address">
+                                                            <button class="btn btn-success  px-md-5">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header py-2" id="headingFive">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseFive"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    Test Location
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div
+                                            id="collapseFive"
+                                            class="collapse"
+                                            aria-labelledby="headingFive"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4 border-bottom">
+
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="selectComputer5">Computers:</label>
+                                                        <select id="selectComputer5" class="form-control">
+                                                            <option>
+                                                                Select Computer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="printer5">Printers:</label>
+                                                        <div class="d-flex">
+                                                        <select id="printer5" class="form-control mr-2">
+                                                            <option>
+                                                                No Printer</option>
+                                                        </select>
+                                                        <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress5">Mac Address:</label>
+                                                        <div class="d-flex justify-content-between">
+                                                            <input
+                                                                type="text"
+                                                                id="macAddress5"
+                                                                class="form-control col mr-md-3"
+                                                                placeholder="Mac Address">
+                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header py-2" id="headingSix">
+                                            <h2 class="mb-0">
+                                                <button
+                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
+                                                    type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapseSix"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseSix">
+                                                    Add Clould Printer For Group Category
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div
+                                            id="collapseSix"
+                                            class="collapse"
+                                            aria-labelledby="headingSix"
+                                            data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="row pt-4 border-bottom">
+                                                    <!-- <div class="col-md-12">
+                                                <h4 class="card-title">Add Clould Printer For Group Category</h4>
+                                            </div> -->
+
+                                                    <div class="col-md-6 mb-4">
+                                                        <label for="macAddress5">Mac Address:</label>
+
+                                                        <div class="d-flex justify-content-between">
+                                                            <input
+                                                                type="text"
+                                                                id="macAddress5"
+                                                                class="form-control col mr-md-3"
+                                                                placeholder="Mac Address">
+                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body iconfont text-left ">
+                                    <h4 class="card-title mb-4 d-flex">5.Live Shop
+                                        <div class="main-toggle main-toggle-success on ml-3">
+                                            <span></span>
+                                        </div>
+                                    </h4>
+
+                                    <form></form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  Live Shop ends-->
                     <!--  Billing Starts-->
                     <div class="row row-sm">
                         <div class="col-12">
@@ -671,332 +1016,6 @@
                     </div>
                     <!--  Billing ends-->
 
-                    <!--  Live Shop Starts-->
-                    <div class="row row-sm">
-                        <div class="col-12">
-                            <div class="card p-3">
-                                <div class="accordion " id="accordionExample">
-                                    <div class="card ">
-                                        <div class="card-header py-2" id="headingOne">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseOne"
-                                                    aria-expanded="true"
-                                                    aria-controls="collapseOne">
-                                                    Test
-                                                </button>
-                                            </h2>
-                                        </div>
-
-                                        <div
-                                            id="collapseOne"
-                                            class="collapse show"
-                                            aria-labelledby="headingOne"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4 border-bottom">
-                                                    <!-- <div class="col-md-12">
-                                                <h4 class="card-title"></h4>
-                                            </div> -->
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer">Computers:</label>
-                                                        <select id="selectComputer" class="form-control">
-                                                            <option>
-                                                                Select Computer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="printer">Printers:</label>
-                                                        <select id="printer" class="form-control">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress">Mac Address:</label>
-                                                        <div class="d-flex justify-content-between"><input
-                                                            type="text"
-                                                            id="macAddress"
-                                                            class="form-control col mr-md-3"
-                                                            placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header py-2" id="headingTwo">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseTwo"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseTwo">
-                                                    Lofty Pursuits
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseTwo"
-                                            class="collapse"
-                                            aria-labelledby="headingTwo"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4">
-                                                    <!-- <div class="col-md-12">
-                                                <h4 class="card-title">Lofty Pursuits</h4>
-                                            </div> -->
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer1">Computers:</label>
-                                                        <select id="selectComputer1" class="form-control">
-                                                            <option>
-                                                                Select Computer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="printer1">Printers:</label>
-                                                        <select id="printer1" class="form-control">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress1">Mac Address:</label>
-                                                        <div class="d-flex justify-content-between">
-                                                            <input
-                                                                type="text"
-                                                                id="macAddress1"
-                                                                class="form-control col mr-md-3"
-                                                                placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header py-2" id="headingThree">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseThree"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseThree">
-                                                    Lofty Pursuits (Zone 1)
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseThree"
-                                            class="collapse"
-                                            aria-labelledby="headingThree"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4 border-bottom">
-                                                    <!-- <div class="col-md-12">
-                                                <h4 class="card-title">Lofty Pursuits (Zone 1)</h4>
-                                            </div> -->
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer2">Computers:</label>
-                                                        <select id="selectComputer2" class="form-control">
-                                                            <option>
-                                                                Select Computer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="printer2">Printers:</label>
-                                                        <select id="printer2" class="form-control">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress3">Mac Address:</label>
-                                                        <div class="d-flex justify-content-between">
-                                                            <input
-                                                                type="text"
-                                                                id="macAddress3"
-                                                                class="form-control col mr-md-3"
-                                                                placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header py-2" id="headingFour">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseFour"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseFour">
-                                                    Lofty Pursuits Lake Jackson Area
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseFour"
-                                            class="collapse"
-                                            aria-labelledby="headingFour"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4 border-bottom">
-                                                    <!-- <div class="col-md-12">
-                                                <h4 class="card-title">Lofty Pursuits Lake Jackson Area</h4>
-                                            </div> -->
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer4">Computers:</label>
-                                                        <select id="selectComputer4" class="form-control">
-                                                            <option>
-                                                                Select Computer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="printer4">Printers:</label>
-                                                        <select id="printer4" class="form-control">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress4">Mac Address:</label>
-                                                        <div class="d-flex justify-content-between">
-                                                            <input
-                                                                type="text"
-                                                                id="macAddress4"
-                                                                class="form-control col mr-md-3"
-                                                                placeholder="Mac Address">
-                                                            <button class="btn btn-success  px-md-5">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header py-2" id="headingFive">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseFive"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseFive">
-                                                    Test Location
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseFive"
-                                            class="collapse"
-                                            aria-labelledby="headingFive"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4 border-bottom">
-
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="selectComputer5">Computers:</label>
-                                                        <select id="selectComputer5" class="form-control">
-                                                            <option>
-                                                                Select Computer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="printer5">Printers:</label>
-                                                        <select id="printer5" class="form-control">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress5">Mac Address:</label>
-                                                        <div class="d-flex justify-content-between">
-                                                            <input
-                                                                type="text"
-                                                                id="macAddress5"
-                                                                class="form-control col mr-md-3"
-                                                                placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header py-2" id="headingSix">
-                                            <h2 class="mb-0">
-                                                <button
-                                                    class="btn btn-link btn-block text-left font-weight-bold text-dark collapsed"
-                                                    type="button"
-                                                    data-toggle="collapse"
-                                                    data-target="#collapseSix"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseSix">
-                                                    Add Clould Printer For Group Category
-                                                </button>
-                                            </h2>
-                                        </div>
-                                        <div
-                                            id="collapseSix"
-                                            class="collapse"
-                                            aria-labelledby="headingSix"
-                                            data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <div class="row pt-4 border-bottom">
-                                                    <!-- <div class="col-md-12">
-                                                <h4 class="card-title">Add Clould Printer For Group Category</h4>
-                                            </div> -->
-
-                                                    <div class="col-md-6 mb-4">
-                                                        <label for="macAddress5">Mac Address:</label>
-
-                                                        <div class="d-flex justify-content-between">
-                                                            <input
-                                                                type="text"
-                                                                id="macAddress5"
-                                                                class="form-control col mr-md-3"
-                                                                placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Check Printer</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body iconfont text-left ">
-                                    <h4 class="card-title mb-4 d-flex">5.Live Shop
-                                        <div class="main-toggle main-toggle-success on ml-3">
-                                            <span></span>
-                                        </div>
-                                    </h4>
-
-                                    <form></form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  Live Shop ends-->
-
                 </div>
                 <!-- Container closed -->
             </div>
@@ -1013,7 +1032,32 @@
             </div>
             <!-- Footer closed -->
         </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">PRINTNODE SETTINGS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <form>
+            <div class="row">
+                <div class="col"> <label for="eMail">Email</label> <input type="text" class="form-control" placeholder="Child print node email"> </div>
 
+            </div>
+        </form>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Delete Account</button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
         <!-- Back-to-top -->
         <a href="#top" id="back-to-top">
             <i class="ti-angle-double-up"></i>
@@ -1035,8 +1079,8 @@
         <script src="assets/js/sidemenu.js"></script>
 
         <!-- Right-sidebar js -->
-        <script src="assets/assets/js/sidebar.js"></script>
-        <script src="assets/assets/js/sidebar-custom.js"></script>
+        <!-- <script src="assets/assets/js/sidebar.js"></script>
+        <script src="assets/assets/js/sidebar-custom.js"></script> -->
 
         <!-- eva js -->
         <script src="assets/js/eva-icons.min.js"></script>
