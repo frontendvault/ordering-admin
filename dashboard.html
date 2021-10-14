@@ -532,8 +532,12 @@
                         <div class="col-12">
                             <div class="card p-3">
                                 <div class="row mb-4">
-                                    <div class="col-md-6"> <h4 class="card-title mb-4">Printer Setting</h4>  </div>
-                                    <div class="col-md-6 text-md-right"> <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Print Node Account</button> </div>
+                                    <div class="col-md-6">
+                                        <h4 class="card-title mb-4">Printer Setting</h4>
+                                    </div>
+                                    <div class="col-md-6 text-md-right">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Print Node Account</button>
+                                    </div>
                                 </div>
                                 <div class="accordion " id="accordionExample">
                                     <div class="card ">
@@ -793,11 +797,11 @@
                                                     <div class="col-md-6 mb-4">
                                                         <label for="printer5">Printers:</label>
                                                         <div class="d-flex">
-                                                        <select id="printer5" class="form-control mr-2">
-                                                            <option>
-                                                                No Printer</option>
-                                                        </select>
-                                                        <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                            <select id="printer5" class="form-control mr-2">
+                                                                <option>
+                                                                    No Printer</option>
+                                                            </select>
+                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
@@ -1032,32 +1036,52 @@
             </div>
             <!-- Footer closed -->
         </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">PRINTNODE SETTINGS</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        <form>
-            <div class="row">
-                <div class="col"> <label for="eMail">Email</label> <input type="text" class="form-control" placeholder="Child print node email"> </div>
+        <!-- Modal -->
+        <div
+            class="modal  fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">PRINTNODE SETTINGS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="eMail">Email</label>
+                                    <input type="text" class="form-control" id="eMail" placeholder="Child print node email">
+                                </div>
+                                <div class="col">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Child print node Password">
+                                </div>
 
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col bg-light py-3 m-3"> 
+                                    <p> <strong>ID:</strong> 47784</p> 
+                                <p><strong>Email:</strong>testMyApp@email.com</p>
+                                <p><strong>Password:</strong>1234567890</p>
+                                <p><strong>Production Key:</strong> a5955bfe5bff8b9d03af7b9d4ca60a752de588f1e603d55a05f80835116b82d6</p>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Delete Account</button>
+
+                    </div>
+                </div>
             </div>
-        </form>
-            
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Delete Account</button>
-       
-        </div>
-      </div>
-    </div>
-  </div>
         <!-- Back-to-top -->
         <a href="#top" id="back-to-top">
             <i class="ti-angle-double-up"></i>
