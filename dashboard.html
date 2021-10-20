@@ -351,14 +351,20 @@
                                                     id="folderName"
                                                     class="form-control"
                                                     placeholder="First name">
+                                                <p class="text-secondary mt-2">e.g. myshop (https://login.orderitup.app/ordering/tx/myshop)</p>
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <label for="shopTitle">Shop Title:</label>
                                                 <input type="text" id="shopTitle" class="form-control" placeholder="Last name">
+                                                <p class="text-secondary mt-2">e.g. My Shop (Shop Title used in prints order email)
+                                                </p>
                                             </div>
                                             <div class="col-md-6 mb-4">
-                                                <label for="shopTitle">Shop Title:</label>
+                                                <label for="shopTitle">URL Format:</label>
                                                 <input type="text" id="shopTitle" class="form-control" placeholder="Last name">
+                                                <p class="text-secondary mt-2">The web address will show
+                                                    like:(https://login.orderitup.app/ordering/tx/kylepizzadallasbeachst)
+                                                </p>
                                             </div>
                                         </div>
                                     </form>
@@ -421,11 +427,11 @@
                                     <form>
                                         <div class="row">
                                             <div class="col-md-6 mb-4">
-                                                <label for="adminUn">Admin UN:</label>
+                                                <label for="adminUn">Username:</label>
                                                 <input type="text" id="adminUn" class="form-control" placeholder="newshop47">
                                             </div>
                                             <div class="col-md-6 mb-4">
-                                                <label for="adminPw">Admin PW :</label>
+                                                <label for="adminPw">Password:</label>
                                                 <input type="text" id="adminPw" class="form-control" placeholder="newshop47">
                                             </div>
                                             <div class="col-md-6 mb-4 d-none">
@@ -486,11 +492,14 @@
                                             </div>
                                             <div class="col-md-6 mb-4">
                                                 <label for="status">Status:</label>
-                                                <select id="status" class="form-control">
+                                                <div class="main-toggle main-toggle-success on">
+                                                    <span></span>
+                                                </div>
+                                                <!-- <select id="status" class="form-control">
                                                     <option>Enabled
                                                     </option>
                                                     <option>Disabled</option>
-                                                </select>
+                                                </select> -->
                                             </div>
                                             <div class="col-md-6 mb-4 d-none">
                                                 <label for="printEmailNotification">Print Email Notification:</label>
@@ -531,8 +540,8 @@
                                             href="#collapseExample"
                                             role="button">
                                             Account Design</a>
-                                        <div class="mg-t-5 collapse" id="collapseExample" style="">
-                                            <div class="card-body">
+                                        <div class="mg-t-5 collapse " id="collapseExample" style="">
+                                            <div class="card-body bg-light mt-2">
 
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 control-label " for="input-logo">Store Logo</label>
@@ -674,7 +683,7 @@
                                                                 <option>
                                                                     No Printer</option>
                                                             </select>
-                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+                                                            <!-- <button class="btn btn-dark col-3 col-md-2">add</button> -->
 
                                                         </div>
                                                     </div>
@@ -685,7 +694,7 @@
                                                             id="macAddress"
                                                             class="form-control col mr-md-3"
                                                             placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
+                                                            <button class="btn btn-success col-md-4 ">Test printer connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -730,7 +739,7 @@
                                                                 <option>
                                                                     No Printer</option>
                                                             </select>
-                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
@@ -741,7 +750,7 @@
                                                                 id="macAddress1"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
+                                                            <button class="btn btn-success col-md-4 ">Test printer connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -786,7 +795,7 @@
                                                                 <option>
                                                                     No Printer</option>
                                                             </select>
-                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
@@ -797,7 +806,7 @@
                                                                 id="macAddress3"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
+                                                            <button class="btn btn-success col-md-4 ">Test printer connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -842,7 +851,7 @@
                                                                 <option>
                                                                     No Printer</option>
                                                             </select>
-                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
@@ -896,7 +905,7 @@
                                                                 <option>
                                                                     No Printer</option>
                                                             </select>
-                                                            <button class="btn btn-dark col-3 col-md-2">add</button>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 mb-4">
@@ -907,7 +916,7 @@
                                                                 id="macAddress5"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
+                                                            <button class="btn btn-success col-md-4 ">Test printer connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -948,7 +957,7 @@
                                                                 id="macAddress5"
                                                                 class="form-control col mr-md-3"
                                                                 placeholder="Mac Address">
-                                                            <button class="btn btn-success col-md-3 ">Test printer Connection</button>
+                                                            <button class="btn btn-success col-md-4 ">Test printer connection</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1008,99 +1017,107 @@
                                             class="tab-pane fade show active"
                                             id="pills-home"
                                             role="tabpanel"
-                                            aria-labelledby="pills-home-tab"> <h6>Fixed tiered content here</h6> </div>
+                                            aria-labelledby="pills-home-tab">
+                                            <h6>Fixed tiered content here</h6>
+                                        </div>
                                         <div
                                             class="tab-pane fade"
                                             id="pills-profile"
                                             role="tabpanel"
                                             aria-labelledby="pills-profile-tab">
-                                            <form class="col-md-8">
-                                                <div class="form-group row">
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">First tier: Up to</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
-                                                        </div>
+                                            <form class="col-md-8 px-0 px-md-2">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                       
+                                                            <div class="col-md-12 d-flex mb-2">
+                                                                <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">First tier: Up to</label>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="email"
+                                                                        class="form-control "
+                                                                        id="colFormLabelSm"
+                                                                        placeholder="$30.00">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex mb-2">
+                                                                <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Second tier: Up to</label>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="email"
+                                                                        class="form-control "
+                                                                        id="colFormLabelSm"
+                                                                        placeholder="$30.00">
+                                                                </div>
+                                                            </div>
+
+                                                       
+                                                            <div class="col-md-12 d-flex mb-2">
+                                                                <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Third tier: Up to</label>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="email"
+                                                                        class="form-control "
+                                                                        id="colFormLabelSm"
+                                                                        placeholder="$30.00">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex mb-2">
+                                                                <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Forth tier: Up to</label>
+                                                                <div class="col">
+                                                                    <input
+                                                                        type="email"
+                                                                        class="form-control "
+                                                                        id="colFormLabelSm"
+                                                                        placeholder="$30.00">
+                                                                </div>
+                                                            </div>
+                                                      
+
                                                     </div>
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Second tier: Up to</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
+                                                    <div class="col-md-6">
+
+                                                        <div class="col-md-12 d-flex mb-2">
+                                                            <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Online order shall be</label>
+                                                            <div class="col">
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control "
+                                                                    id="colFormLabelSm"
+                                                                    placeholder="$30.00">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Third tier: Up to</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
+                                                        <div class="col-md-12 d-flex mb-2">
+                                                            <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Online order shall be</label>
+                                                            <div class="col">
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control "
+                                                                    id="colFormLabelSm"
+                                                                    placeholder="$30.00">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Forth tier: Up to</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
+
+                                                        <div class="col-md-12 d-flex mb-2">
+                                                            <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Online order shall be</label>
+                                                            <div class="col">
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control "
+                                                                    id="colFormLabelSm"
+                                                                    placeholder="$30.00">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Online order shall be</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
+                                                        <div class="col-md-12 d-flex mb-2">
+                                                            <label for="colFormLabelSm" class="col col-sm-4 col-form-label ">Online order shall be</label>
+                                                            <div class="col">
+                                                                <input
+                                                                    type="email"
+                                                                    class="form-control "
+                                                                    id="colFormLabelSm"
+                                                                    placeholder="$30.00">
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Online order shall be</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Online order shall be</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col d-flex">
-                                                        <label for="colFormLabelSm" class="col-sm-3 col-form-label ">Online order shall be</label>
-                                                        <div class="col">
-                                                            <input
-                                                                type="email"
-                                                                class="form-control "
-                                                                id="colFormLabelSm"
-                                                                placeholder="$30.00">
-                                                        </div>
+
                                                     </div>
                                                 </div>
 
@@ -1190,8 +1207,9 @@
                             <button type="button" class="btn btn-danger" data-dismiss="modal">Delete Account</button>
                         </div>
                         <div>
-                            <button class="btn btn-success mr-md-2">Save</button>
-                            <button class="btn btn-secondary">Cancel</button>
+
+                            <button class="btn btn-secondary mr-md-2">Cancel</button>
+                            <button class="btn btn-success">Save</button>
                         </div>
 
                     </div>
